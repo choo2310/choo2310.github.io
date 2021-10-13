@@ -2,51 +2,36 @@
 <html lang="en">
 
 <head>
-  <style>
-    body {
-      background-color: #2f3437;
-    }
-  </style>
-  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 
 <body>
-  <SCRIPT LANGUAGE="JAVASCRIPT">
-  <!--
 
-  var r_text = new Array ();
-  r_text[0] = "At the end of the day, the day will end.";
-  r_text[1] = "Tough times don't last, tough men do.";
-  r_text[2] = "9th core value!";
-  r_text[3] = "Fuck you understand";
-  r_text[4] = "Ey recruit, how do you spell RECORD?";
-  r_text[5] = "REC is you. ORD is me."
-  r_text[6] = "Better wake up your idea!"
-  r_text[7] = "My problem?"
-  r_text[8] = "NEVERMIND!"
-  r_text[9] = "Safety third"
-  r_text[10] = "You think, I thought, who confirm?"
-  r_text[11] = "Don't make your problem my problem."
-  r_text[12] = "Wgt ORD"
-  r_text[13] = "Confirm plus chop"
-  r_text[14] = "When the going gets tough, the tough gets going."
+  <p id=quote></p>
+  <script LANGUAGE="JAVASCRIPT">
+    var r_text = new Array();
+    r_text[0] = "At the end of the day, the day will end.";
+    r_text[1] = "Tough times don't last, tough men do.";
+    r_text[2] = "9th core value!";
+    r_text[4] = "Ey recruit, how do you spell RECORD?";
+    r_text[5] = "REC is you. ORD is me."
+    r_text[6] = "Better wake up your idea!"
+    r_text[7] = "My problem?"
+    r_text[8] = "NEVERMIND!"
+    r_text[9] = "Safety third"
+    r_text[10] = "You think, I thought, who confirm?"
+    r_text[11] = "Don't make your problem my problem."
+    r_text[12] = "Wgt ORD"
+    r_text[13] = "Confirm plus chop"
+    r_text[14] = "When the going gets tough, the tough gets going."
 
-  var i = Math.floor(r_text.length * Math.random());
+    var i = Math.floor(r_text.length * Math.random());
 
-  document.write("<center><FONT SIZE=72><FONT COLOR='#EBEBEB'>" +
-  r_text[i]);
-
-  document.body.style.background="#303437";
-
+    document.getElementById("quote").innerHTML = "\"" + r_text[i] + "\"";
   </script>
-      <style type="text/css">
-  <!--
-  body,td,th {
-       color: #000;
-       font-family: Arial, sans-serif;
 
-  </body>
+</body>
 
 </html>
