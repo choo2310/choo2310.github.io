@@ -14,21 +14,20 @@
   </p>
 
   <script type="text/javascript">
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-  const monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
-];
+    const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
-  var n = new Date();
-  var y = n.getFullYear();
-  var m = n.getMonth();
-  var d = n.getDate();
-  let formattedNumber = d.toLocaleString('en-US', {
+    var n = new Date();
+    var y = n.getFullYear();
+    var m = n.getMonth();
+    var d = n.getDate();
+    var day = n.getDay();
+    let formattedNumber = d.toLocaleString('en-US', {
       minimumIntegerDigits: 2,
       useGrouping: false
     })
-  document.getElementById("date").innerHTML = formattedNumber + " " + monthNames[m] + " " + y;
-
+    document.getElementById("date").innerHTML = days[day] + ", " + formattedNumber + " " + monthNames[m] + " " + y;
   </script>
 
 </body>
