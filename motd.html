@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    body {
+      background-color: #2f3437;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    var texts = [
+      "I am a sentence.",
+      "Some nice stuff.",
+      "I am random too!"
+    ];
+
+    document.getElementById('randomText').value = texts[Math.floor(Math.random() * texts.length)];
+  </script>
+
+
+
+</body>
+
+</html>
