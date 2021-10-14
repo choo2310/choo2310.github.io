@@ -19,6 +19,10 @@ p {
   margin: auto;
 }
 
+#date {
+  font-size: 30px;
+}
+
 #quote {
   font-style: italic;
 }
