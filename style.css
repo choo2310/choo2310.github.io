@@ -5,10 +5,27 @@ body {
   color: #EBEBEB;
 }
 
+.container {
+  -ms-align-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.vert {
+  align-items: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
 .middle {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  padding: 5px;
+  color: #ebebeb;
 }
 
 p {
