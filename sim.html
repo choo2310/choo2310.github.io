@@ -3,14 +3,39 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="simstyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <title></title>
   </head>
   <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 200, // values from 0 to 3000, with step 50ms
+        duration: 2000, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'bottom-center', // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
     <section id="title">
-      <div class="section title">
-        <div class="bg_fade">
-          <div class="flexbox">
-            <div class="center" style="max-width: 100%;">
+      <div data-aos="fade-up" class="section title">
+        <div data-aos="fade-up" class="bg_fade">
+          <div data-aos="fade-up" class="flexbox">
+            <div data-aos="fade-up" class="center" style="max-width: 100%;">
               <h1 style="margin-top: 40px;">Sustainable Aviation Fuel (SAF)</h1>
               <h2 style="font-weight: normal;">Tyler Choo</h2>
             </div>
@@ -19,59 +44,59 @@
       </div>
     </section>
     <section id="themission">
-      <div class="section">
-        <div class="flexbox">
-          <div class="image half">
+      <div data-aos="fade-up" class="section">
+        <div data-aos="fade-up" class="flexbox">
+          <div data-aos="fade-up" class="image half">
             <img src="images/icao-logo.png" alt="">
           </div>
-          <div class="textbox half">
+          <div data-aos="fade-up" class="textbox half">
             <h1>The ICAO 2050 Mission</h1>
             <p>The second conference on aviation and alternative fuels (CAAF/2) endorsed the 2050 ICAO Vision for Sustainable Aviation Fuels as a living inspirational path and called on States, industry and other stakeholders, for a significant proportion of conventional aviation fuels (CAF) to be substituted with sustainable aviation fuels (SAF) by 2050, for international civil aviation to reduce carbon emissions significantly, and whilst pursuing all opportunities in the basket of mitigation measures to reduce emissions as necessary.</p>
           </div>
         </div>
       </div>
     </section>
-    <div class="section break" id="break">
+    <div data-aos="fade-up" class="section break" id="break">
       <img src="images/hon-ab-sustainable-aviation-fuel.jpeg" alt="">
     </div>
     <section id="theproblem">
-      <div class="flexbox">
-          <div class="header">
+      <div data-aos="fade-up" class="flexbox">
+          <div data-aos="fade-up" class="header">
             <h1>The Problem</h1>
-            <div class="underline"></div>
+            <div data-aos="fade-up" class="underline"></div>
           </div>
         </div>
       </div>
-      <div class="section" id="theunitedstates">
-        <div class="flexbox">
-          <div class="textbox half">
+      <div data-aos="fade-up" class="section" id="theunitedstates">
+        <div data-aos="fade-up" class="flexbox">
+          <div data-aos="fade-up" class="textbox half">
             <h1>The United States</h1>
             <p>The US contributes to more than 70% of the world pollution due to aviation.</p>
             <img src="images/graphics/usfuelburn.png" alt="">
           </div>
-          <div class="image half">
+          <div data-aos="fade-up" class="image half">
             <img src="images/graphics/annualstats.png" alt="">
             <p class="caption">Data for United States from FY2019.</p>
           </div>
         </div>
       </div>
-      <div class="section" id="polluters">
-        <div class="flexbox">
-          <div class="image half">
+      <div data-aos="fade-up" class="section" id="polluters">
+        <div data-aos="fade-up" class="flexbox">
+          <div data-aos="fade-up" class="image half">
             <img src="images/graphics/piechart.png" alt="" style="width: 70%;">
           </div>
-          <div class="image half">
+          <div data-aos="fade-up" class="image half">
             <img src="images/graphics/topworldpolluters.png" alt="">
           </div>
         </div>
       </div>
-      <div class="section" id="pollution">
-        <div class="flexbox">
-          <div class="half">
+      <div data-aos="fade-up" class="section" id="pollution">
+        <div data-aos="fade-up" class="flexbox">
+          <div data-aos="fade-up" class="half">
             <img src="images/graphics/toxicgases.png" alt="">
           </div>
-          <div class="half">
-            <div class="textbox">
+          <div data-aos="fade-up" class="half">
+            <div data-aos="fade-up" class="textbox">
               <h1>Pollution</h1>
               <p>Jet engines convert kerosene into greenhouse gases (GHGs) such as carbon dioxide, nitrous gases, sulfuric gases, and more...</p>
             </div>
@@ -80,89 +105,89 @@
         </div>
       </div>
     </section>
-    <div class="break stack">
+    <div data-aos="fade-up" class="break stack">
       <img src="images/United_Biofuel_Flight1180-520_0.jpeg" alt="">
       <p class="caption">United Airlines is committed to using SAF.</p>
     </div>
     <section id="thesolution">
-      <div class="flexbox" id="thesolution">
-        <div class="header">
+      <div data-aos="fade-up" class="flexbox" id="thesolution">
+        <div data-aos="fade-up" class="header">
           <h1>The Solution</h1>
-          <div class="underline"></div>
+          <div data-aos="fade-up" class="underline"></div>
         </div>
       </div>
-      <div class="section">
-        <div class="centerbox">
-          <div class="center">
+      <div data-aos="fade-up" class="section">
+        <div data-aos="fade-up" class="centerbox">
+          <div data-aos="fade-up" class="center">
             <h1>Sustainable Aviation Fuel (SAF)</h1>
             <p>SAF is aviation fuel synthesized from renewable resources. The main source of SAF is currently biofuel, otherwise known as <strong>aviation biofuel</strong>. The sources of SAF are varied, and many are still being tested. </p>
           </div>
         </div>
       </div>
-      <div class="centerbox">
+      <div data-aos="fade-up" class="centerbox">
         <h1>Sources of Aviation Biofuel</h1>
       </div>
-      <div class="section">
-        <div class="flexbox">
-          <div class="image">
+      <div data-aos="fade-up" class="section">
+        <div data-aos="fade-up" class="flexbox">
+          <div data-aos="fade-up" class="image">
             <img src="images/graphics/sources.png" alt="" style="max-width: 60%;">
           </div>
         </div>
       </div>
-      <div class="centerbox">
+      <div data-aos="fade-up" class="centerbox">
       </div>
-      <div class="section">
-        <div class="flexbox">
-          <div class="half">
-            <div class="textbox">
+      <div data-aos="fade-up" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200" class="section">
+        <div data-aos="fade-up" class="flexbox">
+          <div data-aos="fade-up" class="half">
+            <div data-aos="fade-up" class="textbox">
               <p>There are 3 main emerging sources for SAF, and 1 already commercialized option: <strong>HEFA-SPK</strong></p>
             </div>
-            <div class="image">
+            <div data-aos="fade-up" class="image">
               <img src="images/graphics/hefasynthesis.png" alt="">
             </div>
           </div>
-          <div class="half">
-            <div class="image">
+          <div data-aos="fade-up" class="half">
+            <div data-aos="fade-up" class="image">
               <img src="images/graphics/emergingfuels.png" alt="">
             </div>
-            <div class="textbox">
+            <div data-aos="fade-up" class="textbox">
               <p style="margin: 30px 0px;">
                 Of the 10 proposed sources for aviation biofuel, 2 are in prototype, 7 are being demonstrated, and 1 is already in use commercially.
               </p>
             </div>
-            <div class="image">
+            <div data-aos="fade-up" class="image">
               <img src="images/graphics/10sources.png" alt="">
             </div>
           </div>
         </div>
       </div>
-      <div class="section">
-        <div class="flexbox">
-          <div class="image half">
+      <div data-aos="fade-up" class="section">
+        <div data-aos="fade-up" class="flexbox">
+          <div data-aos="fade-up" class="image half">
             <img src="images/graphics/tonnesgallons.png" alt="">
           </div>
-          <div class="textbox half">
+          <div data-aos="fade-up" class="textbox half">
             <h1>How much do we need?</h1>
             <p>The ICAO estimates that we will need <strong>1 billion dry-tonnes</strong> of biomass to produce <strong>50 billion gallons</strong> of sustainable aviation fuel.</p>
           </div>
         </div>
       </div>
     </section>
-    <div class="break stack">
+    <div data-aos="fade-up" class="break stack">
       <img src="images/RollsRoyce_SAF1.jpeg" alt="">
       <p class="caption">Rolls Royce began testing 100% aviation biofuel on their engine test platforms in early 2021.</p>
     </div>
     <section id="thebenefits">
-      <div class="flexbox">
-        <div class="header">
+      <div data-aos="fade-up" class="flexbox">
+        <div data-aos="fade-up" class="header">
           <h1>The Benefits</h1>
-          <div class="underline"></div>
+          <div data-aos="fade-up" class="underline"></div>
         </div>
       </div>
-      <div class="section">
-        <div class="flexbox">
-          <div class="half">
-            <div class="textbox">
+      <div data-aos="fade-up" class="section">
+        <div data-aos="fade-up" class="flexbox">
+          <div data-aos="fade-up" class="half">
+            <div data-aos="fade-up" class="textbox">
               <h1>Cleaner Skies</h1>
               <p>In 2018, NASA conducted a series of tests and found that just a <strong>50/50 blend of biofuel and conventional fuel</strong> produced up to <strong>70% reduction in soot emissions</strong> from commercial jet engines. </p>
               <p>
@@ -170,7 +195,7 @@
               </p>
             </div>
           </div>
-          <div class="image half">
+          <div data-aos="fade-up" class="image half">
             <!--<img src="images/graphics/neighborhoods.png" alt="">-->
             <img src="images/nasadc-8.jpeg" alt="">
             <p class="caption">
@@ -179,125 +204,125 @@
           </div>
         </div>
       </div>
-      <div class="section">
-        <div class="flexbox">
-          <div class="image">
+      <div data-aos="fade-up" class="section">
+        <div data-aos="fade-up" class="flexbox">
+          <div data-aos="fade-up" class="image">
             <img src="images/graphics/5050results.png" alt="">
           </div>
         </div>
       </div>
-      <div class="section">
-        <div class="flexbox">
-          <div class="image half">
+      <div data-aos="fade-up" class="section">
+        <div data-aos="fade-up" class="flexbox">
+          <div data-aos="fade-up" class="image half">
             <img src="images/graphics/otherbenefits.png" alt="">
           </div>
-          <div class="textbox half">
+          <div data-aos="fade-up" class="textbox half">
             <h1>Other Benefits</h1>
             <p>The use of aviation biofuels also has the potenetial to <strong>boost revenue to farmers</strong> who grow the necessary plants to produce aviation biofuels.</p>
             <p>The construction of more biofuel factories will also create more jobs.</p>
           </div>
         </div>
       </div>
-      <div class="section">
-        <div class="flexbox">
-          <div class="textbox half">
+      <div data-aos="fade-up" class="section">
+        <div data-aos="fade-up" class="flexbox">
+          <div data-aos="fade-up" class="textbox half">
             <h1>Going Carbon Neutral</h1>
             <p>The plants grown to produce biofuels will also absorb oxygen. The ICAO hopes that at large enough production scales, the absorption of CO<sub>2</sub> will be enough to offset the emissions by aircraft. The IATA predicts an <strong>80% reduction</strong> in lifecycle carbon emissions.</p>
           </div>
-          <div class="image half">
+          <div data-aos="fade-up" class="image half">
             <img src="images/graphics/carbonneutral.png" alt="">
           </div>
         </div>
       </div>
     </section>
-    <div class="break stack">
+    <div data-aos="fade-up" class="break stack">
       <img src="images/virginatlantic.jpg" alt="">
       <p class="caption">In 2008, Virgin Atlantic flew the first commercial flight powered by a biofuel blend.</p>
     </div>
     <section id="thejourney">
-      <div class="flexbox">
-        <div class="header">
+      <div data-aos="fade-up" class="flexbox">
+        <div data-aos="fade-up" class="header">
           <h1>The Journey</h1>
-          <div class="underline"></div>
+          <div data-aos="fade-up" class="underline"></div>
         </div>
       </div>
-      <div class="section">
+      <div data-aos="fade-up" class="section">
         <img src="images/graphics/timeline.png" alt="" style="padding: 20px 0px;">
       </div>
-      <div class="section">
-        <div class="flexbox">
-          <div class="textbox half">
+      <div data-aos="fade-up" class="section">
+        <div data-aos="fade-up" class="flexbox">
+          <div data-aos="fade-up" class="textbox half">
             <h1>Governments need to help</h1>
             <p>The Biden administration has committed <strong>4.3 billion US dollars</strong> to SAF R&D in order to achieve at least a <strong>30% improvement</strong> in fuel efficiency.</p>
           </div>
-          <div class="image half">
+          <div data-aos="fade-up" class="image half">
             <img src="images/graphics/43bn.png" alt="">
           </div>
         </div>
       </div>
-      <div class="section">
-        <div class="flexbox">
-          <div class="image half">
+      <div data-aos="fade-up" class="section">
+        <div data-aos="fade-up" class="flexbox">
+          <div data-aos="fade-up" class="image half">
             <img src="images/graphics/marketgrowth.png" alt="">
           </div>
-          <div class="textbox half">
+          <div data-aos="fade-up" class="textbox half">
             <h1>It's booming!</h1>
             <p>The aviation biofuel industry is expected to grow <strong>77x</strong> from 2020 to 2028.</p>
           </div>
         </div>
       </div>
     </section>
-    <div class="break stack">
+    <div data-aos="fade-up" class="break stack">
       <img src="images/Boeing ecoDemonstrator 777 test-bed airplane at Frankfurt Airport.jpeg" alt="">
       <p class="caption">Boeing's fleet of ecoDemonstrator aircraft have been using various types SAF as part of their testing for a more sustainable future.</p>
     </div>
   </body>
   <section>
-    <div class="flexbox">
-      <div class="header">
+    <div data-aos="fade-up" class="flexbox">
+      <div data-aos="fade-up" class="header">
         <h1>The Challenges</h1>
-        <div class="underline"></div>
+        <div data-aos="fade-up" class="underline"></div>
       </div>
     </div>
-    <div class="section">
-      <div class="flexbox">
-        <div class="textbox half">
+    <div data-aos="fade-up" class="section">
+      <div data-aos="fade-up" class="flexbox">
+        <div data-aos="fade-up" class="textbox half">
           <h1>High Demand</h1>
           <p>In order to produce enough biofuel to meet global demands for aviation fuel, we will not be able to rely on just one production method. Multiple processes of aviation biofuel development will need to be developed.</p>
         </div>
-        <div class="image half">
+        <div data-aos="fade-up" class="image half">
           <img src="images/graphics/safmethods.png" alt="" style="max-height: 300px; width: auto;">
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="flexbox">
-        <div class="image half">
+    <div data-aos="fade-up" class="section">
+      <div data-aos="fade-up" class="flexbox">
+        <div data-aos="fade-up" class="image half">
           <img src="images/graphics/dropin.png" alt="">
         </div>
-        <div class="textbox half">
+        <div data-aos="fade-up" class="textbox half">
           <h1>Drop In</h1>
           <p>In order to quickly substitute SAF for current conventional fuels, the replacement must be a <strong>drop-in</strong> replacement. SAF must work with existing engines.</p>
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="flexbox">
-        <div class="image half">
+    <div data-aos="fade-up" class="section">
+      <div data-aos="fade-up" class="flexbox">
+        <div data-aos="fade-up" class="image half">
           <img src="images/graphics/regulatory&safety.png" alt="">
         </div>
-        <div class="textbox half">
+        <div data-aos="fade-up" class="textbox half">
           <p>Because SAF is planned to work with existing engines and technology, they must also be able to meet all current safety and regulatory requirements that conventional aviation fuel meets.</p>
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="flexbox">
-        <div class="textbox half">
+    <div data-aos="fade-up" class="section">
+      <div data-aos="fade-up" class="flexbox">
+        <div data-aos="fade-up" class="textbox half">
           <h1>Really Eco-friendly?</h1>
           <p>Testing has shown burning SAF has little reduction in CO<sub>2</sub> emissions. This means that carbon neutrality must be obtained by offsetting the production. This is done mainly through CO<sub>2</sub> absorption by the plants grown to produce the biofuels.</p>
         </div>
-        <div class="image half">
+        <div data-aos="fade-up" class="image half">
           <img src="images/graphics/carboncycle.png" alt="" style="max-height: 200px; width: auto;">
         </div>
       </div>
@@ -306,61 +331,61 @@
   <img src="images/im-143102.jpeg" alt="">
   <p class="caption">Gulfstream began using SAF in 2016 for their daily operations, including in flight tests of their new aircraft.</p>
   <section id="today">
-    <div class="flexbox">
-      <div class="header">
+    <div data-aos="fade-up" class="flexbox">
+      <div data-aos="fade-up" class="header">
         <h1>Who are Helping?</h1>
-        <div class="underline"></div>
+        <div data-aos="fade-up" class="underline"></div>
       </div>
     </div>
-    <div class="section">
-      <div class="flexbox">
-        <div class="half">
+    <div data-aos="fade-up" class="section">
+      <div data-aos="fade-up" class="flexbox">
+        <div data-aos="fade-up" class="half">
           <img src="images/graphics/pioneers.png" alt="">
         </div>
-        <div class="half">
+        <div data-aos="fade-up" class="half">
           <img src="images/graphics/leading edge.png" alt="">
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="flexbox">
-        <div class="half">
+    <div data-aos="fade-up" class="section">
+      <div data-aos="fade-up" class="flexbox">
+        <div data-aos="fade-up" class="half">
           <p class="caption">Airlines considered <strong>pioneers</strong> of SAF</p>
         </div>
-        <div class="half">
+        <div data-aos="fade-up" class="half">
           <p class="caption">Airlines considered <strong>leading contributors</strong> to sustainability</p>
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="centerbox">
-        <div class="center">
+    <div data-aos="fade-up" class="section">
+      <div data-aos="fade-up" class="centerbox">
+        <div data-aos="fade-up" class="center">
           <p>Almost all of the large aircraft producers in the world have committed to using SAF and developing aircraft capable of being fueled with 100% biofuel blends in the future.</p>
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="flexbox">
-        <div class="center">
+    <div data-aos="fade-up" class="section">
+      <div data-aos="fade-up" class="flexbox">
+        <div data-aos="fade-up" class="center">
           <img src="images/graphics/brands.png" alt="">
         </div>
       </div>
     </div>
   </section>
-  <div class="break stack">
+  <div data-aos="fade-up" class="break stack">
     <img src="images/Airlines_Fuel.jpeg" alt="">
     <p class="caption">
       Alaska Airlines is committed to using SAF.
     </p>
   </div>
-  <div class="header">
-    <div class="underline"></div>
+  <div data-aos="fade-up" class="header">
+    <div data-aos="fade-up" class="underline"></div>
   </div>
   <section>
-    <div class="section">
-      <div class="flexbox">
-        <div class="citation">
-          <div class="stack">
+    <div data-aos="fade-up" class="section">
+      <div data-aos="fade-up" class="flexbox">
+        <div data-aos="fade-up" class="citation">
+          <div data-aos="fade-up" class="stack">
             <h1 style="font-size: 32pt;">Sources</h1>
           </div>
           <p><em>Air Traffic By The Numbers</em> (Rep.). (2020, August). Retrieved from
