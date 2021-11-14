@@ -93,15 +93,15 @@ img {
 }
 
 .title {
-  height: 200px;
   background-image: url(images/k66249-03_ecodemonstrator_saf_testing_002.jpeg);
   background-position: center;
   background-size: cover;
 }
 
-.title strong {
+.title h1 {
   font-size: 38pt;
   text-align: center;
+  margin: 0;
 }
 
 
@@ -142,4 +142,14 @@ img {
   width: 100%;
   background-color: black;
   height: 2px;
+}
+
+.citation {
+  text-indent: -36px;
+  padding-left: 36px;
+}
+
+.citation p {
+  font-size: 10pt;
+  max-width: 100%;
 }
