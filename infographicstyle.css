@@ -1,0 +1,36 @@
+.image img {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body {
+  margin:0;
+  padding:0;
+  align-items: center;
+  vertical-align: baseline;
+  display: block;
+  text-align: middle;
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.image {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+#title img {
+  width: 100%;
+}

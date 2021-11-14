@@ -1,0 +1,145 @@
+body {
+  font-family: Avenir Next;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+}
+
+.flexbox {
+  width: 95vw;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  vertical-align: baseline;
+}
+
+.bg_fade {
+  width: inherit;
+  height: inherit;
+  margin: auto;
+  display: flex;
+  vertical-align: baseline;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.half {
+  display: block;
+  width: 50%;
+  max-width: 500px;
+  margin: auto;
+  vertical-align: baseline;
+  align-items: center;
+  align-content: center;
+  padding: 20px 30px;
+
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.image {
+  float: left;
+  vertical-align: baseline;
+  align-items: center;
+  margin: auto;
+}
+
+.centerbox {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+.center p {
+  max-width: 800px;
+}
+
+.textbox {
+  height: auto;
+  float: left;
+  vertical-align: baseline;
+  margin: auto;
+  align-items: center;
+}
+
+.textbox p {
+  text-align: justify;
+  font-weight: normal;
+  margin: 10px 0px;
+}
+
+.center {
+  text-align: center;
+  height: auto;
+  float: left;
+  vertical-align: baseline;
+  max-width: 60%;
+  margin: auto;
+}
+
+.title {
+  height: 200px;
+  background-image: url(images/k66249-03_ecodemonstrator_saf_testing_002.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.title strong {
+  font-size: 38pt;
+  text-align: center;
+}
+
+
+.textbox h1 {
+  font-size: 22pt;
+  font-weight:bold;
+  margin: 20px 0px;
+}
+
+.break img {
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.header h1 {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 38pt;
+  margin: 10px;
+}
+
+.caption {
+  font-weight: lighter;
+  font-size: 10pt;
+  font-style: italic;
+  text-align: center;
+}
+
+.underline {
+  width: 100%;
+  background-color: black;
+  height: 2px;
+}

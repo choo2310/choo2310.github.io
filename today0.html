@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class='middle'>
+    <p id="date"></p>
+  </div>
+
+
+  <script type="text/javascript">
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    var n = new Date();
+    var y = n.getFullYear();
+    var m = n.getMonth();
+    var d = n.getDate();
+    var day = n.getDay();
+    let formattedNumber = d.toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false
+    })
+    document.getElementById("date").innerHTML = days[day] + ", " + formattedNumber + " " + monthNames[m] + " " + y;
+  </script>
+
+</body>
+
+</html>
