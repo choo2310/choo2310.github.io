@@ -28,7 +28,7 @@
       minimumIntegerDigits: 2,
       useGrouping: false
     })
-    document.getElementById("date").innerHTML = days[day] + ", " + formattedNumber + " " + monthNames[m] + " " + y;
+    document.getElementById("date").innerHTML = days[day] + ", " + formattedNumber + " " + monthNames[m].substring(0,3) + " " + y;
   </script>
 
 </body>
