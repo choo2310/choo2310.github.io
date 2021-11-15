@@ -1,0 +1,42 @@
+html {
+
+}
+
+body {
+  font-family: Avenir;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+}
+
+.flexbox {
+  width: 95vw;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  vertical-align: baseline;
+  justify-content: center;
+}
+
+.half {
+  display: block;
+  width: 50%;
+  max-width: 500px;
+  margin: auto;
+  vertical-align: baseline;
+  align-items: center;
+  align-content: center;
+  padding: 20px 30px;
+}
