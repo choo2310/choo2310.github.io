@@ -1,24 +1,33 @@
-html {
-
-}
-
 body {
   font-family: Avenir;
   margin: 0;
   padding: 0;
+  background-color: rgb(48,52,58);
+  color: #FFF;
 }
 
-* {
+a:link {
+  color: #AAF;
+}
 
+a:active {
+  color: #AAF;
+}
+
+a:hover {
+  color: #AAF;
+}
+
+a:visited {
+  color: #AAF;
 }
 
 .section {
-  width: 100%;
+  width: 100vw;
   height: auto;
-  margin: 0;
+  margin: auto;
   padding: 0;
   border: 0;
-  display: flex;
 }
 
 .flexbox {
@@ -39,4 +48,24 @@ body {
   align-items: center;
   align-content: center;
   padding: 20px 30px;
+}
+
+.underline {
+  width: 100%;
+  background-color: white;
+  height: 2px;
+}
+
+.header h1 {
+  margin-bottom: 0;
+}
+
+#navi a {
+  padding: 0px 30px;
+}
+
+#gregozone a {
+  font-size: 24pt;
+  color: #AAF;
+  font-weight: lighter;
 }
